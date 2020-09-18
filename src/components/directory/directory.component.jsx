@@ -46,6 +46,8 @@ class Directory extends React.Component{
         return(
             <div className='directory-menu'>
                 {
+                    //...otherSectionProps is nothing but title,size. 
+                    //insted of writing title={title} we use this
                     this.state.sections.map(({id, ...otherSectionProps}) => (
                         <MenuItem key={id} {...otherSectionProps}/>
                     ))
